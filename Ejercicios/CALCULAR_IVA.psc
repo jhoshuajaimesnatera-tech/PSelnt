@@ -1,0 +1,8 @@
+Proceso CALCULAR_IVA
+	DEFINIR PRECIO, PRECIO_IVA Como Real;
+	Escribir "INGRESE EL PRECIO";
+	Leer PRECIO;
+	PRECIO_IVA<-PRECIO *0.21;
+	Escribir  "PRECIO FINAL ", (PRECIO + PRECIO_IVA);
+	Escribir "IVA ", PRECIO_IVA;
+FinProceso

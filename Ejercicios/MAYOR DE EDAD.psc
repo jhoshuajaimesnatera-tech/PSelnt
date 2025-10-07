@@ -1,0 +1,9 @@
+Proceso MAYOR_DE_EDAD
+	DEFINIR EDAD Como Entero;
+	
+	DEFINIR ES_MAYOR Como Logico;
+	ESCRIBIR " DIME TU EDAD";
+	Leer EDAD;
+	ES_MAYOR<- (EDAD>=18);
+	Escribir "¿ERES MAYOR DE EDAD? ", ES_MAYOR;
+FinProceso

@@ -1,0 +1,7 @@
+Proceso DOLAR_EURO
+	Definir DOLARES, EUROS  Como Real;
+	Escribir "INGRESA LA CANTIDAD A CAMBIAR";
+	Leer DOLARES;
+	EUROS<- DOLARES * 0.92;
+	Escribir "ESTE ES TU CAMBIO ", EUROS;
+FinProceso

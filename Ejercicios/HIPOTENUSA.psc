@@ -1,0 +1,9 @@
+Proceso HIPOTENUSA
+	Definir CATETO1, CATETO2, HIPOT Como Real;
+	Escribir "INGRESA CATETO_1";
+	Leer CATETO1;
+	Escribir "INGRESA CATETO_2";
+	Leer CATETO2;
+	HIPOT<- RAIZ(CATETO1 ^ 2 + CATETO2^2);
+	Escribir "ESTA ES LA HIPOTENUSA ", HIPOT;
+FinProceso
