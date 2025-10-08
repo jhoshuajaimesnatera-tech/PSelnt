@@ -1,0 +1,8 @@
+Proceso RANGO
+	DEFINIR NUM Como Real;
+	DEFINIR ESTA_EN_RANGO Como Logico;
+	Escribir "INGRESA UN NUMERO";
+	Leer NUM;
+	ESTA_EN_RANGO<- (NUM >=1) Y (NUM <=100);
+	ESCRIBIR "ESTA ENTRE 1 Y 100: ", ESTA_EN_RANGO;
+FinProceso
