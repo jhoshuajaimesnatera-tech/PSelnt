@@ -1,0 +1,36 @@
+Proceso BISIESTO
+		DEFINIR ANIO Como Entero;
+		Escribir "DIME UN AÑO";
+		Leer ANIO;
+		// VERSION 1.0 CON DEMASIADAS CONDICIONALES (ESTRUCTURAS SI-ENTONCES)
+		Si (ANIO MOD 4= 0)  Entonces
+			// PODRIA SER BISIESTO, YA QUE ES DIVISIBLE ENTRE 4
+			SI(ANIO MOD 100= 0)Entonces
+				//SI HEMOS LLEGADO AQUI, EL AÑO ES DIVISIBLE ENTRE 4 Y ENTRE 100
+				//AHORA TODO DEPENDE DEL 400
+				SI  (ANIO MOD 400=0) Entonces
+					Escribir "ES BISIESTO";
+				SiNo
+					Escribir "NO ES BISIESTO";
+				FinSi
+			SiNo
+				Escribir "ES BISIESTO";
+			FinSi
+		SiNo
+			Escribir "EL AÑO NO ES BISIESTO";
+		FinSi
+		
+		//VERSION 2.0 MAS CORTO 
+		Si ((ANIO MOD 4=0) Y (ANIO MOD 100=0) Y (ANIO MOD 400=0)) O ((ANIO MOD 4=0) Y (ANIO MOD 100<>0)) Entonces
+			Escribir "ES BISIESTO";
+		SiNo
+			Escribir "NO ES BISIESTO";
+		FinSi
+		
+		//VERSION 3.0 MUCHO MEJOR, ESTE ES EL BUENO 
+		SI (ANIO MOD 400=0) O ((ANIO MOD 4=0) Y (ANIO MOD 100<>0)) Entonces
+			Escribir "ES BISIESTO";
+		SiNo
+			Escribir "NO ES BISIESTO";
+		FinSi
+FinProceso
