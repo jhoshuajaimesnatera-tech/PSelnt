@@ -1,0 +1,24 @@
+Proceso SUMA_N_NUMEROS
+	//CON UN PARA 
+	Definir NUM, SUMA, i Como Entero;
+	Escribir "INGRESA UN NUMERO POSITIVO";
+	Leer NUM;
+	SUMA<- 0;
+	Para i<- 1 Hasta NUM Con Paso 1 Hacer
+		//AQUI TENGO QUE IR SUMANDO 
+		SUMA<-SUMA+i;
+	FinPara
+	Escribir "SUMA DESDE 1 HASTA ", NUM, " ES ", SUMA;
+	
+	//CON UN MIENTRAS 
+	Definir SUMA2, CONTADOR Como Entero;
+	SUMA2<-0;
+	CONTADOR<-1;
+	MIENTRAS (CONTADOR<=NUM) Hacer
+		//ACTUALIZAMOS EL ACUMULADOR
+		SUMA2<-SUMA2+CONTADOR;
+		//ACTUALIZAMOS EL CONTADOR
+		CONTADOR<-CONTADOR+1;
+	FinMientras
+	Escribir "SUMA DESDE 1 HASTA ", NUM, " ES ", SUMA2;
+FinProceso
