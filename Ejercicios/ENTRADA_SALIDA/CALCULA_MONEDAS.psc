@@ -1,0 +1,16 @@
+Proceso CALCULA_MONEDAS
+	Definir MO2E,MO1E,MO50C,MO20C, MO10C Como Entero;
+	Definir TOTAL Como Real;
+	Escribir "CUANTAS MONEDAS DE 2";
+	Leer MO2E;
+	Escribir "CUANTAS MONEDAS DE 1";
+	Leer MO1E;
+	Escribir "CUANTAS MONEDAS DE 0,50";
+	Leer MO50C;
+	Escribir "CUANTAS MONEDAS DE 0,20";
+	Leer MO20C;
+	Escribir "CUANTAS MONEDAS DE 0,10";
+	Leer MO10C;
+	TOTAL<- (MO2E*2 + MO1E*1 + MO50C*0.50 + MO20C*0.20 + MO10C*0.10);
+	Escribir "ESTE ES TU DINERO: ",TOTAL," EUROS";
+FinProceso
