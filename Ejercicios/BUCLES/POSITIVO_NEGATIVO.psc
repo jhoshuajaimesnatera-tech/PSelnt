@@ -1,0 +1,24 @@
+Proceso POSITIVO_NEGATIVO
+	Definir NUM,NUM2, i, POSITIVO, NEGATIVO, CERO Como Entero;
+	Escribir "INGRESA LA CANTIDAD DE NUMEROS QUE QUIERES INCRESAR";
+	Leer NUM;
+	POSITIVO<-0;
+	NEGATIVO<-0;
+	CERO<-0;
+	Para i<-1 Hasta NUM Con Paso 1 Hacer
+		Escribir "INGRESA UN NUMERO", i, "/",NUM;
+		Leer NUM2;
+		Si (NUM2>0) Entonces
+			POSITIVO<-POSITIVO+1;
+		SiNo
+			Si (NUM2<0) Entonces
+				NEGATIVO<-NEGATIVO+1;
+			SiNo
+				CERO<-CERO+1;
+			FinSi
+		FinSi
+	FinPara
+	Escribir "ESTOS FUERON LOS NUMEROS PSITIVOS: ", POSITIVO;
+	Escribir "ESTOS FUERON LOS NUMEROS NEGATIVOS: ", NEGATIVO;
+	Escribir "ESTOS FUERIOS LOS NUMEROS IGUALES A 0: ",CERO;
+FinProceso

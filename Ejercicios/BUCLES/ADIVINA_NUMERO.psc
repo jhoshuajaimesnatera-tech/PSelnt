@@ -1,0 +1,25 @@
+Proceso ADIVINA_NUMERO
+	DEFINIR NUM, INTENTOS, RANDOM Como Entero;
+	RANDOM<-ALEATORIO(1,100);
+	INTENTOS<-1;
+	Escribir "ADIVINA UN NUMERO DEL 1 AL 100";
+Repetir
+		//Escribir RANDOM; //ESTP ES PARA VER QUE NUMERO ES
+		Escribir "INGRESA UN NUMERO ",INTENTOS,"/10";
+		Leer NUM;
+		Si (NUM<RANDOM) Entonces
+			Escribir "TU NUMERO ES MENOR";
+		SiNo
+			Si (NUM>RANDOM) Entonces
+				Escribir "TU NUMERO ES MAYOR";
+			FinSi
+		FinSi
+		INTENTOS<-INTENTOS+1;
+	Hasta Que NUM=RANDOM O INTENTOS=10;
+	
+	Si NUM=RANDOM Entonces
+		Escribir "MUY BIEN, ACERTASTE";
+	SiNo
+		Escribir "HAS FALLADO";
+	FinSi
+FinProceso

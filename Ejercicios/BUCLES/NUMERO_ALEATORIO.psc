@@ -1,0 +1,10 @@
+Proceso NUMERO_ALEATORIO
+	DEFINIR NUM, RAND, i Como Entero;
+	Escribir "CUANTOS NUMERO ALEATORIOS DESEAS GENERAR";
+	Leer NUM;
+	PARA i<-1 Hasta NUM Con Paso 1 Hacer
+		RAND<- ALEATORIO(1,100);
+		Escribir "NUMERO GENERADO: ", RAND;
+	FinPara
+	
+FinProceso
